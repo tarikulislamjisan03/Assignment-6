@@ -4,19 +4,19 @@ import banner from '../B13-A6-DigiTools-Platform/assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className=' flex justify-between items-center py-20 max-w-[1200px] mx-auto'>
+        <div className=' md:flex md:justify-between items-center py-20 max-w-[1200px]  mx-auto '>
             
             {/* Left Side */}
-            <div className='w-1/2 space-y-6'>
+            <div className='w-1/2 space-y-6 mx-auto'>
                 
                 {/* Badge */}
-                <div className='inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium'>
+                <div className=' inline-flex  md:justify-start justify-center items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium'>
                     <span className='w-2 h-2 bg-purple-600 rounded-full'></span>
                     New: AI-Powered Tools Available
                 </div>
 
                 {/* Heading */}
-                <h1 className='text-6xl font-bold text-gray-900 leading-tight'>
+                <h1 className='md:text-6xl text-3xl font-bold text-gray-900 leading-tight text-center md:text-left'>
                     Supercharge Your Digital Workflow
                 </h1>
 
@@ -37,7 +37,7 @@ const Banner = () => {
             </div>
 
             {/* Right Side - Image */}
-            <div className='w-1/2 flex justify-end'>
+            <div className='w-1/2 flex mx-auto mt-5 md:justify-end'>
                 <img 
                     src={banner}
                 />
