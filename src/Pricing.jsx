@@ -18,7 +18,7 @@ const Pricing = () => {
                     <div className='border border-gray-200 rounded-2xl p-8 flex-1'>
                         <h1 className='text-xl font-bold'>Starter</h1>
                         <p className='text-gray-500 text-sm mb-4'>Perfect for getting started</p>
-                        <div className='mb-4'>
+                        <div className='md:text-4xl text-2xl font-bold'>
                             <span className='text-4xl font-bold'>$0</span>
                             <span className='text-gray-500 text-sm'>/Month</span>
                         </div>
@@ -34,12 +34,12 @@ const Pricing = () => {
                     </div>
 
                     {/* Pro */}
-                    <div className='bg-gradient-to-b from-purple-600 to-purple-800 rounded-2xl p-8 relative text-white'>
+                    <div className='bg-gradient-to-b from-purple-600 to-purple-800 rounded-2xl p-2 pt-5 md:p-8  relative text-white'>
                         <span className='absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-200 text-yellow-700 text-xs font-bold px-4 py-1 rounded-full'>Most Popular</span>
-                        <h1 className='text-xl font-bold'>Pro</h1>
-                        <p className='text-purple-200 text-sm mb-4'>Best for professionals</p>
+                        <h1 className='text-xl font-bold text-center md:text-left pt-5'>Pro</h1>
+                        <p className='text-purple-200 text-sm mb-4 md:text-left text-center'>Best for professionals</p>
                         <div className='mb-4'>
-                            <span className='text-4xl font-bold'>$29</span>
+                            <span className='md:text-4xl text-2xl font-bold'>$29</span>
                             <span className='text-purple-200 text-sm'>/Month</span>
                         </div>
                         <ul className='space-y-2 mb-8'>
@@ -59,8 +59,8 @@ const Pricing = () => {
                     <div className='border border-gray-200 rounded-2xl p-8'>
                         <h1 className='text-xl font-bold'>Enterprise</h1>
                         <p className='text-gray-500 text-sm mb-4'>For teams and businesses</p>
-                        <div className='mb-4'>
-                            <span className='text-4xl font-bold'>$99</span>
+                        <div className='mb-4 text-center'>
+                            <span className='md:text-4xl text-2xl font-bold'>$99</span>
                             <span className='text-gray-500 text-sm'>/Month</span>
                         </div>
                         <ul className='space-y-2 mb-8'>
