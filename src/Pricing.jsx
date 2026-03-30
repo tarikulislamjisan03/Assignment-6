@@ -12,7 +12,7 @@ const Pricing = () => {
                 </div>
 
                 {/* Cards */}
-                <div className='grid grid-cols-3 gap-6 items-stretch '>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch '>
 
                     {/* Starter */}
                     <div className='border border-gray-200 rounded-2xl p-8 flex-1'>

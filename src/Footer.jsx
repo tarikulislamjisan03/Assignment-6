@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='max-w-[1200px] p-5 mx-auto'>
                 
                 {/* Top Section */}
-                <div className='grid grid-cols-3 md:grid-cols-5 md:gap-10 gap-30 mb-12'>
+                <div className='grid grid-cols-1 md:grid-cols-5 md:gap-10 gap-30 mb-12'>
 
                     {/* Logo & Description */}
                     <div className='col-span-1'>
@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
 
                     {/* Product */}
-                    <div>
+                    <div className='mx-auto md:mx-0'>
                         <h1 className='text-white font-semibold mb-4'>Product</h1>
                         <ul className='space-y-3 text-sm'>
                             <li className='hover:text-white cursor-pointer'>Features</li>
@@ -29,7 +29,7 @@ const Footer = () => {
                     </div>
 
                     {/* Company */}
-                    <div>
+                    <div className='mx-auto md:mx-0'>
                         <h1 className='text-white font-semibold mb-4'>Company</h1>
                         <ul className='space-y-3 text-sm'>
                             <li className='hover:text-white cursor-pointer'>About</li>
@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
 
                     {/* Resources */}
-                    <div>
+                    <div className='mx-auto md:mx-0'>
                         <h1 className='text-white font-semibold mb-4'>Resources</h1>
                         <ul className='space-y-3 text-sm'>
                             <li className='hover:text-white cursor-pointer'>Documentation</li>
@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
 
                     {/* Social Links */}
-                    <div>
+                    <div className='mx-auto md:mx-0'>
                         <h1 className='text-white font-semibold mb-4'>Social Links</h1>
                         <div className='flex gap-3'>
                             <div className='bg-gray-700 p-2 rounded-full hover:bg-gray-600 cursor-pointer'>

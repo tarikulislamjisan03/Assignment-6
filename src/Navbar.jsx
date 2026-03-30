@@ -14,7 +14,7 @@ const Navbar = ({cart}) => {
                 </h1>
 
                {/* Nav Links */}
-                <ul className='flex gap-8 text-gray-600 justify-center '>
+                <ul className='flex  flex-wrap md:flex-nowrap gap-8 text-gray-600 justify-center '>
                     <li className='cursor-pointer hover:text-purple-600'>Products</li>
                     <li className='cursor-pointer hover:text-purple-600'>Features</li>
                     <li className='cursor-pointer hover:text-purple-600'>Pricing</li>

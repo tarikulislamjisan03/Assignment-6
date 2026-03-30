@@ -13,7 +13,7 @@ const Steps = () => {
                 </div>
 
                 {/* Cards */}
-                <div className='grid grid-cols-3 gap-6'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                     
                     {/* Step 1 */}
                     <div className='bg-white border   border-gray-200 rounded-2xl p-8 relative'>
