@@ -1,7 +1,12 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
-const Cart = ({crt}) => {
-    console.log(crt)
+const Cart = ({crt,cart,setcart}) => {
+   const handleremove=(name)=>{
+    const filtered=cart.filter(crt=>crt.name!==name)
+    setcart(filtered)
+    toast('Card Deleted')
+   }
     return (
         <div>
              <div className=''>
@@ -18,7 +23,7 @@ const Cart = ({crt}) => {
                             <p className='text-gray-500 text-sm'>${crt.price} </p>
                         </div>
                     </div>
-                    <button className='text-red-500 font-semibold'>Remove</button>
+                    <button onClick={()=>handleremove(crt.name)} className='text-red-500 font-semibold'>Remove</button>
                 </div>
 
 

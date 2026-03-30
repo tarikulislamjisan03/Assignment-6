@@ -23,7 +23,7 @@ let total=0;
             {cart.length === 0 
                 ? <p className='text-center text-gray-500 py-10'>Cart is Empty!</p>
                 : <>
-                    {cart.map((crt, index) => <Cart key={index} crt={crt} />)}
+                    {cart.map((crt, index) => <Cart cart={cart} setcart={setcart} key={index} crt={crt} />)}
 
                     {/* Total */}
                     <div className='flex justify-between items-center mt-4'>

@@ -1,7 +1,7 @@
 import { ShoppingCart } from 'lucide-react';
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return (
         <div className='max-w-[1200px] mx-auto'>
              <nav className=' border-blue-400 py-4'>
@@ -24,8 +24,15 @@ const Navbar = () => {
 
                 {/* Right Side */}
                 <div className='flex items-center gap-4'>
-                    {/* Cart Icon */}
-                  <ShoppingCart className='text-gray-600'></ShoppingCart>
+                  <div className='relative'>
+                      {/* Cart Icon */}
+                  <ShoppingCart className='text-gray-600'> {cart.length} </ShoppingCart>
+
+                   {/* Count Badge */}
+    <span className='absolute -top-2 -right-2 bg-purple-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center'>
+        {cart.length}
+    </span>
+                  </div>
                     <p className='cursor-pointer text-gray-600 hover:text-purple-600'>Login</p>
                     <button className='bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700'>
                         Get Started

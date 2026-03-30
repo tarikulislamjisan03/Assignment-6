@@ -6,6 +6,12 @@ import Stats from './Stats';
 import Toolscards from '../Toolscards';
 import Carts from './Carts';
 import { ToastContainer } from 'react-toastify';
+import Steps from './Step';
+import Pricing from './Pricing';
+import Explore from './Explore';
+import Footer from './Footer';
+
+
 
 
 
@@ -16,7 +22,7 @@ const App = () => {
     <section className=' mx-auto'>
       <div >
         {/* components */}
-     <Navbar> </Navbar>
+     <Navbar cart={cart} setcart={setcart}> </Navbar>
      <Banner> </Banner>
      <Stats></Stats>
      <div>
@@ -30,17 +36,21 @@ const App = () => {
         <button>Products</button>
             </div>
             <div className={`${toogle===true ? '' : 'bg-purple-500 text-white'} px-8 py-1  rounded-lg text-black font-semibold border`} onClick={()=>settoogle(false)}>
-        <button>Cart</button>
+        <button>Cart({cart.length}) </button>
             </div>
         </div>
             </div>
             {
-              toogle === true ? <Toolscards cart={cart} setcart={setcart} toogle={toogle} settoogle={settoogle}></Toolscards>: <Carts cart={cart} setcart={setcart}></Carts>
+              toogle === true ? <Toolscards toogle={toogle} cart={cart} setcart={setcart} toogle={toogle} settoogle={settoogle}></Toolscards>: <Carts cart={cart} setcart={setcart}></Carts>
             }
      
     
     </div>
     <ToastContainer></ToastContainer>
+    <Steps></Steps>
+    <Pricing></Pricing>
+    <Explore></Explore>
+    <Footer></Footer>
     </section>
   );
 };
