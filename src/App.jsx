@@ -19,7 +19,7 @@ const App = () => {
   const [toogle,settoogle]=useState(true)
   const [cart,setcart]=useState([])
   return (
-    <section className=' mx-auto'>
+    <section className=' border mx-auto'>
       <div >
         {/* components */}
      <Navbar cart={cart} setcart={setcart}> </Navbar>

@@ -3,18 +3,18 @@ import React from 'react';
 
 const Navbar = ({cart}) => {
     return (
-        <div className='max-w-[1200px] mx-auto'>
+        <div className='max-w-[1200px] mx-auto '>
              <nav className=' border-blue-400 py-4'>
-            <div className=' mx-auto flex justify-between items-center'>
+            <div className='space-y-2 mx-auto md:flex justify-between items-center'>
                 
                 {/* Logo */}
-                <h1 className='text-3xl font-bold'>
+                <h1 className=' text-center text-3xl font-bold'>
                     <span className='text-purple-600 italic'>Digi</span>
                     <span className='text-blue-500 italic'>Tools</span>
                 </h1>
 
                {/* Nav Links */}
-                <ul className='flex gap-8 text-gray-600'>
+                <ul className='flex gap-8 text-gray-600 justify-center '>
                     <li className='cursor-pointer hover:text-purple-600'>Products</li>
                     <li className='cursor-pointer hover:text-purple-600'>Features</li>
                     <li className='cursor-pointer hover:text-purple-600'>Pricing</li>
@@ -23,7 +23,7 @@ const Navbar = ({cart}) => {
                 </ul>
 
                 {/* Right Side */}
-                <div className='flex items-center gap-4'>
+                <div className='flex justify-center items-center gap-4'>
                   <div className='relative'>
                       {/* Cart Icon */}
                   <ShoppingCart className='text-gray-600'> {cart.length} </ShoppingCart>
