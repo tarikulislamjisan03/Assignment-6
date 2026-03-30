@@ -5,7 +5,7 @@ const Pricing = () => {
         <div className='py-16'>
             <div className='max-w-[1200px] mx-auto'>
 
-                {/* Title */}
+                {/* Title and description*/}
                 <div className='text-center mb-12'>
                     <h1 className='text-4xl font-bold mb-3'>Simple, Transparent Pricing</h1>
                     <p className='text-gray-500'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
