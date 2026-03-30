@@ -6,10 +6,10 @@ import { FaFacebook } from 'react-icons/fa';
 const Footer = () => {
     return (
         <footer className='bg-gray-900 text-gray-400 py-16'>
-            <div className='max-w-[1200px] mx-auto'>
+            <div className='max-w-[1200px] p-5 mx-auto'>
                 
                 {/* Top Section */}
-                <div className='grid grid-cols-5 gap-10 mb-12'>
+                <div className='grid grid-cols-3 md:grid-cols-5 md:gap-10 gap-30 mb-12'>
 
                     {/* Logo & Description */}
                     <div className='col-span-1'>
