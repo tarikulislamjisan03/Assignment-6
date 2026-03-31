@@ -41,7 +41,7 @@ const App = () => {
         </div>
             </div>
             {
-              toogle === true ? <Toolscards toogle={toogle} cart={cart} setcart={setcart} toogle={toogle} settoogle={settoogle}></Toolscards>: <Carts cart={cart} setcart={setcart}></Carts>
+              toogle === true ? <Toolscards toogle={toogle} cart={cart} setcart={setcart}  settoogle={settoogle}></Toolscards>: <Carts cart={cart} setcart={setcart}></Carts>
             }
      
     

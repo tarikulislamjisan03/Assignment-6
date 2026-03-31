@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
 const Toolscard = ({tool,cart,setcart}) => {
+    const [added,setadded]=useState(false)
 
     const handlebuynowbtn=()=>{
         console.log('clicked')
         setcart([...cart,tool])
+        setadded(true)
         toast('Added to Cart')
     }
     return (
@@ -50,7 +52,9 @@ const Toolscard = ({tool,cart,setcart}) => {
 
             {/* Button */}
             <button onClick={()=>handlebuynowbtn()} className='w-full bg-purple-600 text-white py-3 rounded-full font-semibold hover:bg-purple-700'>
-                Buy Now
+                {
+                    added ? 'Added To Cart' : 'Buy Now'
+                }
             </button>
 
         </div>
